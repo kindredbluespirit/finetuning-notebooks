@@ -7,3 +7,5 @@ llama*/
 lora_model*/
 model*/
 outputs/
+
+data/
