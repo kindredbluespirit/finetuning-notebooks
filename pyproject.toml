@@ -5,10 +5,14 @@ description = "Add your description here"
 readme = "README.md"
 requires-python = ">=3.12"
 dependencies = [
+    "bitsandbytes>=0.46.1",
+    "jupyterlab>=4.4.4",
+    "synthetic-data-kit",
     "vllm>=0.9.2",
 ]
 
 [dependency-groups]
-dev = [
-    "ipykernel>=6.29.5",
-]
+dev = []
+
+[tool.uv.sources]
+synthetic-data-kit = { git = "https://github.com/meta-llama/synthetic-data-kit" }
